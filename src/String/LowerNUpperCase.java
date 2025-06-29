@@ -1,6 +1,7 @@
 package String;
 
 import java.util.Scanner;
+//Toggle
 
 public class LowerNUpperCase {
     public static void main(String[] args) {
