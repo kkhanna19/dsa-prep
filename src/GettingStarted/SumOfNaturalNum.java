@@ -13,5 +13,5 @@ public class SumOfNaturalNum {
         }
         System.out.println(sum);
     }
-//    sum = (n*(n-1)/2);
+//    sum = (n*(n+1)/2);
 }
