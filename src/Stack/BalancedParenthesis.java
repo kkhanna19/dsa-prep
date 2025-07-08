@@ -8,29 +8,28 @@ public class BalancedParenthesis {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
 
-        System.out.println(balanced(s));
+        System.out.println(isBalanced(s));
     }
 
-    public static boolean balanced(String s){
+    static boolean isBalanced(String s) {
+        // code here
         Stack<Character> parenthesis = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch == '(' || ch == '[' || ch == '{'){
+            if (ch == '(' || ch == '[' || ch == '{') {
                 parenthesis.push(ch);
-            }
-            else {
-                if(parenthesis.isEmpty()){
+            } else {
+                if (parenthesis.isEmpty()) {
                     return false;
                 }
-                if (parenthesis.peek()=='(' && ch== ')' || parenthesis.peek()=='[' && ch==']' || parenthesis.peek() == '{' && ch=='}'){
+                if (parenthesis.peek() == '(' && ch == ')' || parenthesis.peek() == '[' && ch == ']' || parenthesis.peek() == '{' && ch == '}') {
                     parenthesis.pop();
-                }
-                else {
+                } else {
                     return false;
                 }
             }
         }
-        if(parenthesis.isEmpty()){
+        if (parenthesis.isEmpty()) {
             return true;
         }
         return false;
