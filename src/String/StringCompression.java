@@ -19,7 +19,7 @@ public class StringCompression {
                 count++;
             }
             else{
-                if(count>1) ans += count;
+                if(count>1) ans += count + " ";
                 count = 1;
                 ans += curr;
             }
