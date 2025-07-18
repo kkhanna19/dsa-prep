@@ -204,20 +204,36 @@ public class LinkedList {
         Node curr = midNode;
         Node next;
         while (curr != null){
-
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
         }
+
+        Node right = prev;  //right half head
+        Node left = head;
+
+        //step3 - check left half & right half
+        while (right != null){
+            if (left.data != right.data){
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
     }
 
 
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
-        ll.addFirst(2);
-        ll.addFirst(1);
-        ll.addLast(4);
-        ll.addLast(5);
-
-        ll.add(2, 3);
-        ll.print();
+          LinkedList ll = new LinkedList();
+//        ll.addFirst(2);
+//        ll.addFirst(1);
+//        ll.addLast(4);
+//        ll.addLast(5);
+//
+//        ll.add(2, 3);
+//        ll.print();
 //        System.out.println("size of the ll: " + ll.size);
 //        ll.removeFirst();
 //        ll.print();
@@ -233,8 +249,18 @@ public class LinkedList {
 //        System.out.println(ll.recursiveSearch(10));
 
 //        ll.reverse();
+//        ll.print();
+//        ll.deleteNthFromEnd(3);
+//        ll.print();
+
+
+        // for palindrome
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
+
         ll.print();
-        ll.deleteNthFromEnd(3);
-        ll.print();
+        System.out.println(ll.checkPalindrome());
     }
 }
