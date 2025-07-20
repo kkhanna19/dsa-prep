@@ -29,20 +29,51 @@ public class DoubleLL {
       head = newNode;
 }
 
-    public int removeFirst(){
+
+    public void addLast(int data){
+      Node newNode = new Node(data);
+      size++;
       if (head == null){
-          System.out.println("dLL is empty");
-          return Integer.MIN_VALUE;
+          head = tail = newNode;
+          return;
       }
-      if(size == 1){
+      tail.next = newNode;
+      newNode.prev = tail;
+      tail = newNode;
+    }
+
+    public int removeFirst(){
+        if (head == null){
+            System.out.println("dLL is empty");
+            return Integer.MIN_VALUE;
+        }
+        if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
+
+    public int removeLast(){
+        if(size == 0){
+            System.out.println("LL is empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
           int val = head.data;
           head = tail = null;
-          size--;
+          size = 0;
           return val;
       }
-      int val = head.data;
-      head = head.next;
-      head.prev = null;
+      int val = tail.data;
+      tail = tail.prev;
+      tail.next = null;
       size--;
       return val;
     }
@@ -58,16 +89,23 @@ public class DoubleLL {
 
     public static void main(String[] args) {
         DoubleLL dll = new DoubleLL();
+        dll.addLast(4);
+        dll.addLast(5);
         dll.addFirst(3);
         dll.addFirst(2);
         dll.addFirst(1);
 
-        dll.print();
-        System.out.println(dll.size);
 
-        dll.removeFirst();
+//        dll.print();
+//        System.out.println(dll.size);
+
+//        dll.removeFirst();
+//        dll.print();
+//        System.out.println(size);
+
         dll.print();
-        System.out.println(size);
+        dll.removeLast();
+        dll.print();
 
     }
 }
