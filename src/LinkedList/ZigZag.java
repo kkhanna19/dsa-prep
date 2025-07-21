@@ -36,7 +36,7 @@ public class ZigZag {
     public void zigZag(){
         // find mid
         Node slow = head;
-        Node fast = head.next;
+        Node fast = head;
         while (fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
@@ -86,3 +86,8 @@ public class ZigZag {
 
     }
 }
+
+
+//Use fast = head.next when you want to split the list into two halves properly.
+//
+//Use fast = head only if you want to bias toward the left half or just find the lower middle in some problems.
