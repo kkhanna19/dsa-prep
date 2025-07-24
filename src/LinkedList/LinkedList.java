@@ -159,29 +159,6 @@ public class LinkedList {
         head = prev;
     }
 
-    public void deleteNthFromEnd(int n) {
-        // calculate size
-        int size = 0;
-        Node temp = head;
-        while (temp != null) {
-            temp = temp.next;
-            size++;
-        }
-        if (n == size) {
-            head = head.next;
-            return;//removeFirst
-        }
-        // size - n
-        int i = 1;
-        int iToFind = size - n;
-        Node prev = head;
-        while (i < iToFind) {
-            prev = prev.next;
-            i++;
-        }
-        prev.next = prev.next.next;
-    }
-
     // slow-fast approach
     public Node findMid(Node head) {    //helper
         Node slow = head;
@@ -219,8 +196,7 @@ public class LinkedList {
 
 //        ll.reverse();
 //        ll.print();
-//        ll.deleteNthFromEnd(3);
-//        ll.print();
+
 
     }
 }
