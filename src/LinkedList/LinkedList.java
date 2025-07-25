@@ -173,11 +173,11 @@ public class LinkedList {
 
     public static void main(String[] args) {
           LinkedList ll = new LinkedList();
-//        ll.addFirst(2);
-//        ll.addFirst(1);
-//        ll.addLast(4);
-//        ll.addLast(5);
-//
+        ll.addFirst(2);
+        ll.addFirst(1);
+        ll.addLast(4);
+        ll.addLast(5);
+
 //        ll.add(2, 3);
 //        ll.print();
 //        System.out.println("size of the ll: " + ll.size);
@@ -195,7 +195,7 @@ public class LinkedList {
 //        System.out.println(ll.recursiveSearch(10));
 
 //        ll.reverse();
-//        ll.print();
+        ll.print();
 
 
     }
