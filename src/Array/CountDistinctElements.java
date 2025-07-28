@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-//Counting the elements(non-repeating)
+//Counting the elements (non-repeating)
 
 public class CountDistinctElements {
     public static void main(String[] args) {
