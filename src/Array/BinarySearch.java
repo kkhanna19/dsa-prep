@@ -11,7 +11,7 @@ public class BinarySearch {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("enter key: ");
+        System.out.println("Enter key: ");
         int key = sc.nextInt();
 
         System.out.println(binarySearch(arr,key));
