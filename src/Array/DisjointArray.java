@@ -3,7 +3,7 @@ package Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DisjointArray {         //no common element
+public class DisjointArray {         //no common element should be found
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("size of array 1: ");
