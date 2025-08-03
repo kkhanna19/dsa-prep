@@ -2,7 +2,7 @@ package Array.Sorting;
 
 import java.util.Scanner;
 
-public class DutchNationalFlag {
+public class DutchNationalFlag {          //sorting for 012 only
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
