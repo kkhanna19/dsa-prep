@@ -2,6 +2,8 @@ package Array.Sorting;
 
 import java.util.Scanner;
 
+//choose the min element
+
 public class SelectionSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
