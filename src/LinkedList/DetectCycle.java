@@ -18,6 +18,7 @@ public class DetectCycle {
        Node slow = head;
        Node fast = head;
 
+       //find mid
         while (fast != null && fast.next != null) {
             slow = slow.next;     //+1
             fast = fast.next.next;   //+2
@@ -27,6 +28,8 @@ public class DetectCycle {
         }
         return false;   //cycle doesn't exist
     }
+
+
 
     public static void main(String[] args) {
         head = new Node(1);
