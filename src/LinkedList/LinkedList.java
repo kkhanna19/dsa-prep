@@ -113,7 +113,7 @@ public class LinkedList {
         return val;
     }
 
-    public int itrSearch(int key) {    //O(n)
+    public int itrSearch(int key) {    // tc - O(n)
         Node temp = head;
         int i = 0;
         while (temp != null) {
