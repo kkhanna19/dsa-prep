@@ -1,7 +1,7 @@
 package Stack;
 
 import java.util.ArrayList;
-public class Stack {
+public class StackArrayList {
         static class StackOperations{
         static ArrayList<Integer> list =new ArrayList<>();
 

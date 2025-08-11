@@ -1,7 +1,5 @@
 package Stack;
 
-import java.util.ArrayList;
-
 public class StackLinkedList {
        static class Node{
                 int data;
@@ -12,11 +10,50 @@ public class StackLinkedList {
                 }
         }
 
+        static class Stack {
+            static Node head = null;
+
+            public static boolean isEmpty() {
+                return head == null;
+            }
+
+            //push
+            public static void push(int data) {
+                Node newNode = new Node(data);
+
+                if (isEmpty()) {
+                    head = newNode;
+                    return;
+                }
+
+                newNode.next = head;
+                head = newNode;
+            }
+
+            //pop
+            public static int pop() {
+                if (isEmpty()) {
+                    return -1;
+                }
+
+                int top = head.data;
+                head = head.next;
+                return top;
+            }
 
 
+            //peek
+            public static int peek() {
+                if (isEmpty()) {
+                    return -1;
+                }
+                return head.data;
+            }
+
+        }
 
         public static void main(String[] args) {
-            Stack.Stack.StackOperations s = new Stack.Stack.StackOperations();
+            Stack s = new Stack();
             s.push(1);
             s.push(2);
             s.push(3);
@@ -28,4 +65,3 @@ public class StackLinkedList {
         }
     }
 
-}
