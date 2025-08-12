@@ -6,30 +6,38 @@ import java.util.Stack;
 public class BalancedParenthesis {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
+        String str = sc.nextLine();
 
-        System.out.println(isBalanced(s));
+        System.out.println(isBalanced(str));
     }
 
-    static boolean isBalanced(String s) {
-        // code here
-        Stack<Character> parenthesis = new Stack<>();
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (ch == '(' || ch == '[' || ch == '{') {
-                parenthesis.push(ch);
-            } else {
-                if (parenthesis.isEmpty()) {
+    static boolean isBalanced(String str) {
+       Stack<Character> s = new Stack<>();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            //opening
+            if(ch == '(' || ch == '[' || ch == '{'){
+                s.push(ch);
+            }
+
+            //closing
+            else{
+                if(s.isEmpty()){
                     return false;
                 }
-                if (parenthesis.peek() == '(' && ch == ')' || parenthesis.peek() == '[' && ch == ']' || parenthesis.peek() == '{' && ch == '}') {
-                    parenthesis.pop();
-                } else {
-                    return false;
+                else {
+                    if ((s.peek() == '(' && ch == ')') ||
+                            (s.peek() == '[' && ch == ']') ||
+                            (s.peek() == '{' && ch == '}')) {
+                        s.pop();
+                    } else {
+                        return false;
+                    }
                 }
             }
         }
-        if (parenthesis.isEmpty()) {
+        if(s.isEmpty()){
             return true;
         }
         return false;
