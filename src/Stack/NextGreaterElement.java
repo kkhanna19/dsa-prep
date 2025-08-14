@@ -9,6 +9,7 @@ public class NextGreaterElement {
         s.clear(); //reset stack
         result = new int[arr.length];
         for (int i = arr.length - 1; i >= 0; i--) {
+
             // while
             while (!s.isEmpty() && arr[s.peek()] <= arr[i]) {
                 s.pop();
