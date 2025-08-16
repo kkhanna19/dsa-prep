@@ -36,7 +36,7 @@ public class NextGreaterElement {
                 s.pop();
             }
 
-            //if - else
+            //if-else
             if (s.isEmpty()) {
                 result[i] = -1;
             } else {
