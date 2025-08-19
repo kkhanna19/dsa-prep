@@ -15,7 +15,7 @@ public class StackTwoQueue {
             return q1.isEmpty();
         }
 
-        public void add(int data){      //O(2n)--> O(N)
+        public void push(int data){      //O(2n)--> O(N)
 //            s1 ---> s2
             while (!q1.isEmpty()){
                 q2.add(q1.remove());
@@ -30,7 +30,7 @@ public class StackTwoQueue {
             }
         }
 
-        public int remove(){
+        public int pop(){
             if(q1.isEmpty()){
                 System.out.println("Queue empty");
                 return -1;
@@ -49,13 +49,13 @@ public class StackTwoQueue {
 
     public static void main(String[] args) {
        stack q = new stack();
-        q.add(1);
-        q.add(2);
-        q.add(3);
+        q.push(1);
+        q.push(2);
+        q.push(3);
 
         while (!q.isEmpty()){
             System.out.println(q.peek());
-            q.remove();
+            q.pop();
         }
     }
 }
