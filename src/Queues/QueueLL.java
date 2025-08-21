@@ -16,7 +16,7 @@ public class QueueLL {
        static Node tail = null;
 
         public boolean isEmpty(){
-           return head == null & tail == null;
+            return head == null & tail == null;
        }
 
        //add
