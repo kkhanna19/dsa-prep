@@ -25,7 +25,8 @@ public class NextGreaterElement {
             //push
             s.push(i);
         }
-        System.out.println("Next Greater Right: " + Arrays.toString(result));    }
+        System.out.println("Next Greater Right: " + Arrays.toString(result));
+    }
 
     public static void nextGreaterLeft(int[] arr) {
         s.clear(); //reset stack
