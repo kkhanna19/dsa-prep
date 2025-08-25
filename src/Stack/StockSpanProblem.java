@@ -3,7 +3,7 @@ package Stack;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class StockStackProblem {
+public class StockSpanProblem {
     public static void main(String[] args) {
         int[] stocks = {100, 80, 60, 70, 60, 85, 100};
         int[] span = new int[stocks.length];
