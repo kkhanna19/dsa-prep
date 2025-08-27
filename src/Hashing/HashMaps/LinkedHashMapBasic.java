@@ -1,7 +1,6 @@
-package Hashing;
+package Hashing.HashMaps;
 
-//KEYS are in insertion order
-
+//KEYS are in insertion order using Doubly LL
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
