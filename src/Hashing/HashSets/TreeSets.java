@@ -25,7 +25,7 @@ public class TreeSets {
         System.out.println(lhs);
 
 
-        // Tree Set --> Sorted Order --> O(LOG N)
+        // Tree Set -> Sorted Order --> O(LOG N)
         //null values not allowed
         TreeSet<String> ts = new TreeSet<>();
         ts.add("jaipur");
