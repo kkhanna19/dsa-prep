@@ -15,7 +15,7 @@ public class TreeSets {
         city.add("bengaluru");
         System.out.println(city);
 
-        //LHS performance < HashSets
+        //LHS performance < HashSets performance
         //maintains insertion order
         LinkedHashSet<String> lhs = new LinkedHashSet<>();
         lhs.add("jaipur");
