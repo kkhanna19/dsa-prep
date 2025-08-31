@@ -26,7 +26,7 @@ public class TreeSets {
 
 
         // Tree Set -> Sorted Order --> O(LOG N)
-        //null values not allowed
+        //  null values not allowed
         TreeSet<String> ts = new TreeSet<>();
         ts.add("jaipur");
         ts.add("mumbai");
