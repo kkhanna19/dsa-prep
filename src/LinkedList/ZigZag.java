@@ -89,5 +89,5 @@ public class ZigZag {
 
 
 //Use fast = head.next when you want to split the list into two halves properly.
-//
+
 //Use fast = head only if you want to bias toward the left half or just find the lower middle in some problems.

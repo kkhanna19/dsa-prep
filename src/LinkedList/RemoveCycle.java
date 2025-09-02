@@ -46,7 +46,7 @@ public class RemoveCycle {
         }
 
         // find meeting point
-        slow= head;
+        slow = head;
         Node prev = null;    //last node
         while (slow != fast){
             prev = fast;
