@@ -17,7 +17,7 @@ public class KnapsackProblem {
             ratio[i][1] = val[i]/(double) weight[i];
         }
 
-        //ascending order
+        //Ascending order
         Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
 
         int capacity = capW;
