@@ -64,8 +64,8 @@ public class TopViewOfTree {
         }
 
     }
-    public static void main(String[] args) {
-          /*   1
+    public static void main(String[] args) {/*
+             1
             / \
            2   3
           / \ / \
