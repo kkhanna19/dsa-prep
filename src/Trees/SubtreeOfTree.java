@@ -52,7 +52,7 @@ public class SubtreeOfTree {
           / \
          4   5
 
-     */
+      */
 
         Node root = new Node(1);
         root.left = new Node(2);
