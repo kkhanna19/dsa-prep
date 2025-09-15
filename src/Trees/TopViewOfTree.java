@@ -45,7 +45,7 @@ public class TopViewOfTree {
                 }
             } else {
 
-                if (!map.containsKey(curr.hd)) {   //first time this hd is occurring
+                if (!map.containsKey(curr.hd)) {      //first time this hd is occurring
                     map.put(curr.hd, curr.node);
                 }
                 if (curr.node.left != null) {
