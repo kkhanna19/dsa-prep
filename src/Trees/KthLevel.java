@@ -1,6 +1,6 @@
 package Trees;
 
-public class KthLevel {     // O(N)
+public class KthLevel {     // O(n)
 
     static class Node {
         int data;
