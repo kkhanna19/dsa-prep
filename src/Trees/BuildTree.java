@@ -27,7 +27,7 @@ public class BuildTree {    //o(n)
              return newNode;
          }
 
-         public static void preorder(Node root) {      // # root-> left-> right
+         public static void preorder(Node root) {      // root-> left-> right
              if (root == null) {
                  System.out.print("-1 ");
                  return;
