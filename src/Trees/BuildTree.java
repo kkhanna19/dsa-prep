@@ -1,6 +1,6 @@
 package Trees;
 
-public class BuildTree {    //o(n)
+public class BuildTree {    //O(n)
      static class Node {
          int data;
          Node left;
