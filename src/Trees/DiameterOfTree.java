@@ -56,6 +56,6 @@ public class DiameterOfTree {
 
 
         System.out.println("Diameter: " + diameter(root).diam);
-        System.out.println("Height: " + diameter(root).ht);
+        System.out.println("Height : " + diameter(root).ht);
     }
 }
