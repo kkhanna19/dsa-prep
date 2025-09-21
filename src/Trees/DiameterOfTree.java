@@ -22,7 +22,7 @@ public class DiameterOfTree {
             this.ht = ht;
         }
     }
-    public static Info diameter(Node root){     //O(n^2)
+    public static Info diameter(Node root){     // O(n ^ 2)
         if(root == null){
             return new Info(0, 0);
         }
