@@ -28,10 +28,10 @@ public class BinarySearch {
             if(arr[mid] == key){
                 return mid;
             }
-            if(arr[mid] < key){
+            if(arr[mid] < key){         // right
                 start = mid+1;
             }else{
-                end = mid-1;
+                end = mid-1;        //left
             }
         }
         return -1;
