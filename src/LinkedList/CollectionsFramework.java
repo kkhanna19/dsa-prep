@@ -17,5 +17,4 @@ public class CollectionsFramework {
         ll.removeFirst();
         System.out.println(ll);
     }
-
 }
