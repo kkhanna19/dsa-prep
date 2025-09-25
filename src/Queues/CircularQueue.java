@@ -15,10 +15,12 @@ public class CircularQueue {
         }
 
         public boolean isEmpty(){
+
             return rear == -1 && front == -1;
         }
 
         public boolean isFull(){
+
             return (rear+1) % size == front;     //rear = front
         }
 

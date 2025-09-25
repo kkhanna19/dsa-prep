@@ -8,6 +8,7 @@ public class QueueTwoStack {
        static Stack<Integer> s2 = new Stack<>();
 
         public  boolean isEmpty(){
+
             return s1.isEmpty();
         }
 

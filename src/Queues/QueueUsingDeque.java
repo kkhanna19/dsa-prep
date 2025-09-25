@@ -7,14 +7,17 @@ public class QueueUsingDeque {
         Deque<Integer> deque = new LinkedList<>();
 
         public void add(int data){
+
             deque.addLast(data);
         }
 
         public int remove(){
-           return deque.removeFirst();
+
+            return deque.removeFirst();
         }
 
         public int peek(){
+
             return deque.getFirst();
         }
     }
