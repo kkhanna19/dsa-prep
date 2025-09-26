@@ -10,6 +10,7 @@ public class InterleaveTwoHalves {
         for (int i = 0; i < size/2; i++) {
             firstHalf.add(q.remove());
         }
+
         while (!firstHalf.isEmpty()){
             q.add(firstHalf.remove());
             q.add(q.remove());
