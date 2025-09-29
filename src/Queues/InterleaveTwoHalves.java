@@ -15,7 +15,6 @@ public class InterleaveTwoHalves {
             q.add(firstHalf.remove());
             q.add(q.remove());
         }
-
     }
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<>();
