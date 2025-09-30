@@ -5,7 +5,6 @@ import java.util.*;
 public class InterleaveTwoHalves {
     public static void interLeave(Queue<Integer> q){
         Queue<Integer> firstHalf = new LinkedList<>();
-
         int size = q.size();
 
         for (int i = 0; i < size/2; i++) {
