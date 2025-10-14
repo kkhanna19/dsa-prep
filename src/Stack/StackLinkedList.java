@@ -46,7 +46,6 @@ public class StackLinkedList {
 
 
 
-
             //peek
             public static int peek() {
                 if (isEmpty()) {
