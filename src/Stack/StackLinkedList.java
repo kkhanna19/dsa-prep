@@ -40,7 +40,6 @@ public class StackLinkedList {
                 return top;
             }
 
-
             //peek
             public static int peek() {
                 if (isEmpty()) {
