@@ -39,7 +39,6 @@ public class StackLinkedList {
                 head = head.next;
                 return top;
             }
-
             //peek
             public static int peek() {
                 if (isEmpty()) {
