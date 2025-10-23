@@ -49,7 +49,6 @@ public class MaxAreaRectangle {
         System.out.println();
         System.out.println("max area of histogram: " + maxArea);
     }
-
     public static void main(String[] args) {
         int[] arr = {2, 1, 5, 6, 2, 3};  //heights
         maxArea(arr);
