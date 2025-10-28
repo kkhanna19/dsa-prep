@@ -37,7 +37,6 @@ public class MaxAreaRectangle {
             }
             s.push(i);
         }
-
         //Current area : width = j-i-1 = nsr[i] - nsl[i] -1
         for (int i = 0; i < arr.length; i++) {
             int height = arr[i];
