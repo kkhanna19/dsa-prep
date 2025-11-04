@@ -27,7 +27,6 @@ public class MergeSort {
         mergeSort(arr, mid+1, ei);   //right part
         merge(arr, si, mid, ei);
     }
-
     public static void merge(int[] arr, int si, int mid, int ei){
          int[] temp = new int[ei-si+1];
          int i = si;
