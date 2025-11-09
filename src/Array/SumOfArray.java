@@ -23,5 +23,6 @@ public class SumOfArray {
             sum = sum + arr[i];
         }
         return sum;
+
     }
 }
