@@ -15,7 +15,6 @@ public class SumOfArray {
             }
             System.out.println("Sum of elements is: " + SumOfElements(arr));
         }
-
     public static int SumOfElements(int[] arr) {
         int sum = 0;
         int n = arr.length;
