@@ -12,6 +12,7 @@ public class CollectionsFramework {
         ll.addFirst(0);
         System.out.println(ll);
 
+
         //remove
         ll.removeLast();
         ll.removeFirst();
