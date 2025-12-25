@@ -77,7 +77,6 @@ public class DoubleLL {
       size--;
       return val;
     }
-
     public void print(){
       Node temp = head;
       while (temp != null){
