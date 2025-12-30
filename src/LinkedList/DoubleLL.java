@@ -28,6 +28,7 @@ public class DoubleLL {
       head.prev = newNode;
       head = newNode;
 }
+
     public void addLast(int data){
       Node newNode = new Node(data);
       size++;
