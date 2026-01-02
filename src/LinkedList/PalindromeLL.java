@@ -69,6 +69,7 @@ public class PalindromeLL {
             left = left.next;
             right = right.next;
         }
+
         return true;
     }
 
