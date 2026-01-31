@@ -32,7 +32,6 @@ public class DutchNationalFlag {
                 mid++;
 
 
-
             } else {
                 int swap = nums[high];
                 nums[high] = nums[mid];
