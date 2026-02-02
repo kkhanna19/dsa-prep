@@ -7,6 +7,7 @@ public class ReverseString {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         reverse(s);
+
     }
     public static void reverse(String s){
         String str = "";
